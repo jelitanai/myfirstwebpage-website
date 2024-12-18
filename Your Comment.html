@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Comment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8ede3;
+            color: #4a4a4a;
+        }
+
+        /* Flash Animation Keyframes */
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #cfcac6, #d8bca7);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid #9b8877;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-family: 'Times', cursive;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-family: 'Poppins', sans-serif;
+			margin: 10px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #9b8877;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.0em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #d2b48c;
+            transform: scale(1.1);
+        }
+
+        /* Main Content */
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        main h2 {
+            font-size: 2.3em;
+            color: #8b5e3c;
+            font-family: 'Nunito', cursive;
+        }
+
+        /* Comment Form */
+        .comment-form {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff4e8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-form label {
+            font-size: 1.1em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .comment-form input, .comment-form textarea {
+            width: 97%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+			resize: none;
+        }
+
+        .comment-form button {
+            background-color: #9b8877;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .comment-form button:hover {
+            background-color: #d2b48c;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #9b8877;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+            font-size: 0.8em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Share Your Thoughts</h1>
+        <p>💬 We’d love to hear what you think!</p>
+    </header>
+    <nav>
+        <a href="Homepage.html"><i class="fas fa-home"></i> Home</a>
+        <a href="My Biodata.html"><i class="fas fa-user"></i> My Biodata</a>
+        <a href="My Portfolio.html"><i class="fas fa-briefcase"></i> My Portfolio</a>
+        <a href="My Video.html"><i class="fas fa-video"></i> My Video</a>
+        <a href="Your Comment.html"><i class="fas fa-comment"></i> Your Comments</a>
+    </nav>
+    <main>
+        <h2>We Value Your Feedback</h2>
+        <p>We’re excited to hear your thoughts, ideas, and comments about my work. Your feedback helps me grow and improve, and I truly appreciate your time and input. Please feel free to share anything you’d like, whether it’s positive or constructive. Thank you for being a part of this creative journey!</p>
+
+        <!-- Comment Form -->
+        <div class="comment-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
+
+                <button type="submit">Submit Comment</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Aina Naimi. Made with 💖 and creativity.
+    </footer>
+</body>
+</html>

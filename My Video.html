@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8ede3;
+            color: #4a4a4a;
+        }
+
+        /* Flash Animation Keyframes */
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #cfcac6, #d8bca7);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 5px solid #9b8877;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-family: 'Times', cursive;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-family: 'Poppins', sans-serif;
+			margin: 10px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #9b8877;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.0em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: #d2b48c;
+            transform: scale(1.1);
+        }
+
+        /* Main Content */
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        main h2 {
+            font-size: 2.5em;
+            color: #8b5e3c;
+            font-family: 'Pacifico', cursive;
+            animation: flash 3s infinite; /* Flash animation for main title */
+        }
+
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .video-container video {
+            max-width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container p {
+            font-size: 1em;
+            color: #4a4a4a;
+            margin-top: 15px;
+            max-width: 600px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #9b8877;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+            font-size: 0.8em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Video</h1>
+        <p>🎥 Experience my world through videos!</p>
+    </header>
+    <nav>
+        <a href="Homepage.html"><i class="fas fa-home"></i> Home</a>
+        <a href="My Biodata.html"><i class="fas fa-user"></i> My Biodata</a>
+        <a href="My Portfolio.html"><i class="fas fa-briefcase"></i> My Portfolio</a>
+        <a href="My Video.html"><i class="fas fa-video"></i> My Video</a>
+        <a href="Your Comment.html"><i class="fas fa-comment"></i> Your Comments</a>
+    </nav>
+    <main>
+        <h2>Enjoy My Video</h2>
+        <div class="video-container">
+    <div class="cute-frame">
+        <video controls>
+            <source src="cats.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <p>I truly love cats—whether they’re street cats or pets. For me, the greatest gift in life, one that I’m always grateful for, is the existence of these beautiful creatures. Here’s a video of me with my beloved cats. 
+    I hope you enjoy it!</p>
+</div>
+
+<style>
+    /* Cute Frame Container */
+    .cute-frame {
+        width: 90%; /* Adjust width as needed */
+        max-width: 500px; /* Optional max size */
+        margin: 0 auto;
+        aspect-ratio: 1; /* Ensures 1:1 ratio */
+        background-color: #ffe6f2; /* Light pink background for a cute look */
+        border: 8px dashed #ff99cc; /* Dashed pastel pink border */
+        border-radius: 30px; /* Rounded corners for a softer look */
+        box-shadow: 0 10px 20px rgba(255, 182, 193, 0.5); /* Pink glow shadow */
+        overflow: hidden; /* Ensures video stays within rounded edges */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px; /* Adds spacing around the video */
+        position: relative;
+    }
+
+    /* Decorative Elements (Optional) */
+    .cute-frame::before, .cute-frame::after {
+        content: '✨';
+        position: absolute;
+        font-size: 1.5em;
+        color: #ff66b2; /* Sparkle color */
+    }
+
+    .cute-frame::before {
+        top: -10px;
+        left: 10px;
+    }
+
+    .cute-frame::after {
+        bottom: -10px;
+        right: 10px;
+    }
+
+    /* Video Inside Cute Frame */
+    .cute-frame video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures video fills the frame without distortion */
+        border-radius: 20px; /* Adds a softer edge to the video */
+    }
+</style>
+
+    </main>
+    <footer>
+        &copy; 2024 Aina Naimi. Made with 💖 and creativity.
+    </footer>
+</body>
+</html>
